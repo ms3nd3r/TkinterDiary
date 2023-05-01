@@ -11,10 +11,10 @@
 1. このリポジトリをローカルにクローンします。
 
    ```
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/ms3nd3r/TkinterDiary.git
    ```
 
-2. `diaryApp.py`ファイルを開きます。
+2. `diary.py`ファイルを開きます。
 
 3. プログラムを実行します。
 
