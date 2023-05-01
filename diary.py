@@ -12,8 +12,12 @@ root = tk.Tk()
 root.geometry('500x300')
 root.title('日記アプリ')
 
+
+# ウィンドウの背景色を黒に設定
+root.configure(bg='#1C1C1C')
+
 # テキストエリアの作成
-text = tk.Text(root, height=5)
+text = tk.Text(root, height=5, bg='black', fg='white', insertbackground='white')
 text.pack()
 
 # 保存ボタンのクリック時の処理
@@ -28,9 +32,12 @@ def save_text():
     text.delete('1.0', 'end')  # テキストエリアの内容を初期化する
     messagebox.showinfo('更新完了！', '日記を更新しました。')  # アラートメッセージの表示
 
+# # 保存ボタンの作成
+# save_button = tk.Button(root, text='保存', command=save_text)
+# save_button.pack()
 # 保存ボタンの作成
-save_button = tk.Button(root, text='保存', command=save_text)
-save_button.pack()
+save_button = tk.Button(root, text='保存', command=save_text, font=('Helvetica', 22), bg='white', fg='black')
+save_button.pack(pady=10)
 
 # メインループの開始
 root.mainloop()
